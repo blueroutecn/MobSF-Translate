@@ -16,52 +16,52 @@
 
           <!-- sidebar menu: : style can be found in sidebar.less -->
           <ul class="nav sidebar-menu">
-            <li class="header">Dynamic Analysis</li>
-            <li class="active"><a href="#general"><i class="fa fa-rocket"></i> Information</a></li>
+            <li class="header">动态分析</li>
+            <li class="active"><a href="#general"><i class="fa fa-rocket"></i> 信息</a></li>
              <li class="treeview">
-              <a href="javascript::;"><i class="glyphicon glyphicon-phone"></i> API Monitor</a>
+              <a href="javascript::;"><i class="glyphicon glyphicon-phone"></i> API监视器</a>
               <ul class="nav treeview-menu">
-                <li><a href="#fileio"><i class="glyphicon glyphicon-file"></i> File IO</a></li>
-                <li><a href="#networkcalls"><i class="fa fa-plug"></i> Network Calls</a></li>
-                <li><a href="#bindercalls"><i class="fa fa-cubes"></i> Binder Calls</a></li>
-                <li><a href="#crypto"><i class="fa fa-flash"></i> Crypto</a></li>
-                <li><a href="#deviceinfo"><i class="fa fa-info"></i> Device Info</a></li>
+                <li><a href="#fileio"><i class="glyphicon glyphicon-file"></i> 文件IO</a></li>
+                <li><a href="#networkcalls"><i class="fa fa-plug"></i> 网络监视</a></li>
+                <li><a href="#bindercalls"><i class="fa fa-cubes"></i> Binder监视</a></li>
+                <li><a href="#crypto"><i class="fa fa-flash"></i> 加密</a></li>
+                <li><a href="#deviceinfo"><i class="fa fa-info"></i> 设备Info</a></li>
                 <li><a href="#base64"><i class="fa fa-puzzle-piece"></i> Base64</a></li>
-                <li><a href="#content"><i class="fa fa-reorder"></i> Content</a></li>
+                <li><a href="#content"><i class="fa fa-reorder"></i> 内容</a></li>
                 <li><a href="#sms"><i class="fa fa-comments"></i> SMS</a></li>
-                <li><a href="#devicedata"><i class="fa fa-phone"></i> Device Data</a></li>
-                <li><a href="#dexclassloader"><i class="fa fa-asterisk"></i> Dex Class Loader</a></li>
-                <li><a href="#reflection"><i class="fa fa-object-ungroup"></i> Reflection</a></li>
-                <li><a href="#systemmanager"><i class="fa fa-cogs"></i> System Manager</a></li>
-                <li><a href="#process"><i class="fa fa-bar-chart-o"></i> Process</a></li>
+                <li><a href="#devicedata"><i class="fa fa-phone"></i> 设备信息</a></li>
+                <li><a href="#dexclassloader"><i class="fa fa-asterisk"></i> Dex Class加载器</a></li>
+                <li><a href="#reflection"><i class="fa fa-object-ungroup"></i> 反射</a></li>
+                <li><a href="#systemmanager"><i class="fa fa-cogs"></i> 系统管理</a></li>
+                <li><a href="#process"><i class="fa fa-bar-chart-o"></i> 进程</a></li>
               </ul>
             </li>
 
-            <li><a href="#exportedactivitytester"><i class="glyphicon glyphicon-search"></i> Exported Activity Tester</a></li>
+            <li><a href="#exportedactivitytester"><i class="glyphicon glyphicon-search"></i> 导出Activity Tester</a></li>
             <li><a href="#activitytester"><i class="glyphicon glyphicon-search"></i> Activity Tester</a></li>
-            <li><a href="#screenshots"><i class="fa fa-camera"></i> Screenshots</a></li>
-            <li><a href="#httpstraffic"><i class="fa fa-exchange"></i> HTTPs Traffic</a></li>
+            <li><a href="#screenshots"><i class="fa fa-camera"></i> 截屏</a></li>
+            <li><a href="#httpstraffic"><i class="fa fa-exchange"></i> HTTPs 通道</a></li>
 
            
 
             <li class="treeview">
-              <a href="javascript::;"><i class="fa fa-plus"></i> Reconnaissance</a>
+              <a href="javascript::;"><i class="fa fa-plus"></i> 侦查信息</a>
               <ul class="nav treeview-menu">
               <li><a href="#url"><i class="glyphicon glyphicon-globe"></i> URLs</a></li>
-              <li><a href="#domain"><i class="glyphicon glyphicon-screenshot"></i> Malware Check</a></li>
-              <li><a href="#email"><i class="glyphicon glyphicon-envelope"></i> Emails</a></li>
+              <li><a href="#domain"><i class="glyphicon glyphicon-screenshot"></i> 恶意软件检测</a></li>
+              <li><a href="#email"><i class="glyphicon glyphicon-envelope"></i> 邮箱</a></li>
               </ul>
             </li>
 
             <li class="treeview">
-              <a href="javascript::;"><i class="fa fa-files-o"></i> File Analysis</a>
+              <a href="javascript::;"><i class="fa fa-files-o"></i> 文件分析</a>
               <ul class="nav treeview-menu">
-                <li><a href="#sqlitedatabase"><i class="fa fa-database"></i> SQLite Database</a></li>
-                <li><a href="#xmlfiles"><i class="fa fa-file-excel-o"></i> XML Files</a></li>
-                <li><a href="#otherfiles"><i class="fa fa-file-o"></i> Other Files</a></li>
+                <li><a href="#sqlitedatabase"><i class="fa fa-database"></i> SQLite数据库</a></li>
+                <li><a href="#xmlfiles"><i class="fa fa-file-excel-o"></i> XML 文件</a></li>
+                <li><a href="#otherfiles"><i class="fa fa-file-o"></i> 其他文件</a></li>
               </ul>
             </li>
-            <li><a href="javascript:window.print()"><i class="fa fa-cloud-download"></i> Download / Print</a></li>
+            <li><a href="javascript:window.print()"><i class="fa fa-cloud-download"></i> 下载 / 打印</a></li>
             
           </ul>
         </div>
@@ -78,23 +78,23 @@
 
 
 <section id="general">
-  <h2 class="page-header"><strong>Dynamic Analysis Result </strong> - {{pkg}} </h2>
-  <div align="center"><a class="btn btn-success btn-lg" role="button" href="../APIFuzzer?md5={{ md5 }}">Start Web API Fuzzer</a></div>
+  <h2 class="page-header"><strong>动态分析结果 </strong> - {{pkg}} </h2>
+  <div align="center"><a class="btn btn-success btn-lg" role="button" href="../APIFuzzer?md5={{ md5 }}">开启 Web API 审计</a></div>
   <p class="lead">
     <div class="row">
     <div class="col-sm-12">
       <div class="box box-danger">
         <div class="box-header with-border">
-          <h3 class="box-title">Downloads</h3>
+          <h3 class="box-title">下载</h3>
           <span class="label label-danger pull-right"><i class="fa fa-cloud-download"></i></span>
         </div><!-- /.box-header -->
         <div class="box-body">
         <div class="list-group">
-            <a class="btn btn-info btn-lg" role="button" href="../download/{{ md5 }}-WebTraffic.txt">HTTP(S) Traffic</a>
-            <a class="btn btn-info btn-lg" role="button" href="../download/{{ md5 }}-logcat.txt">Logcat Logs</a>
-            <a class="btn btn-info btn-lg" role="button" href="../download/{{ md5 }}-x_logcat.txt">Droidmon API Monitor Logs</a>
-            <a class="btn btn-info btn-lg" role="button" href="../download/{{ md5 }}-dump.txt">Dumpsys Logs</a> 
-            <a class="btn btn-info btn-lg" role="button" href="../download/{{ md5 }}-AppData.tar">Application Data</a>
+            <a class="btn btn-info btn-lg" role="button" href="../download/{{ md5 }}-WebTraffic.txt">HTTP(S) 信道</a>
+            <a class="btn btn-info btn-lg" role="button" href="../download/{{ md5 }}-logcat.txt">日志s</a>
+            <a class="btn btn-info btn-lg" role="button" href="../download/{{ md5 }}-x_logcat.txt">API 监视器日志</a>
+            <a class="btn btn-info btn-lg" role="button" href="../download/{{ md5 }}-dump.txt">Dumpsys 日志</a> 
+            <a class="btn btn-info btn-lg" role="button" href="../download/{{ md5 }}-AppData.tar">应用程序数据</a>
             
             <!--<a class="btn btn-info btn-lg" role="button" href="../download/{{ md5 }}-pcap.cap">Packet Capture</a>-->
        </div>
@@ -138,7 +138,7 @@
 
           <div class="box">
             <div class="box-header">
-              <h3 class="box-title"><i class="fa fa-plug"></i> Network Calls</h3>
+              <h3 class="box-title"><i class="fa fa-plug"></i> 网络监视</h3>
             </div>
             <!-- /.box-header -->
             <div class="box-body">
@@ -161,7 +161,7 @@
 
           <div class="box">
             <div class="box-header">
-              <h3 class="box-title"><i class="fa fa-cubes"></i> Binder Calls</h3>
+              <h3 class="box-title"><i class="fa fa-cubes"></i> Binder监视</h3>
             </div>
             <!-- /.box-header -->
             <div class="box-body">
@@ -185,7 +185,7 @@
 
           <div class="box">
             <div class="box-header">
-              <h3 class="box-title"><i class="fa fa-flash"></i> Crypto</h3>
+              <h3 class="box-title"><i class="fa fa-flash"></i> 加密</h3>
             </div>
             <!-- /.box-header -->
             <div class="box-body">
@@ -207,7 +207,7 @@
 
           <div class="box">
             <div class="box-header">
-              <h3 class="box-title"><i class="fa fa-info"></i> Device Info</h3>
+              <h3 class="box-title"><i class="fa fa-info"></i> 设备信息</h3>
             </div>
             <!-- /.box-header -->
             <div class="box-body">
@@ -253,7 +253,7 @@
 
           <div class="box">
             <div class="box-header">
-              <h3 class="box-title"><i class="fa fa-reorder"></i> Content</h3>
+              <h3 class="box-title"><i class="fa fa-reorder"></i> 内容</h3>
             </div>
             <!-- /.box-header -->
             <div class="box-body">
@@ -296,7 +296,7 @@
 
           <div class="box">
             <div class="box-header">
-              <h3 class="box-title"><i class="fa fa-phone"></i> Device Data</h3>
+              <h3 class="box-title"><i class="fa fa-phone"></i> 设备数据</h3>
             </div>
             <!-- /.box-header -->
             <div class="box-body">
@@ -318,7 +318,7 @@
 
           <div class="box">
             <div class="box-header">
-              <h3 class="box-title"><i class="fa fa-asterisk"></i> Dex Class Loader</h3>
+              <h3 class="box-title"><i class="fa fa-asterisk"></i> Dex Class加载器</h3>
             </div>
             <!-- /.box-header -->
             <div class="box-body">
@@ -340,7 +340,7 @@
 
           <div class="box">
             <div class="box-header">
-              <h3 class="box-title"><i class="fa fa-object-ungroup"></i> Reflection</h3>
+              <h3 class="box-title"><i class="fa fa-object-ungroup"></i> 反射</h3>
             </div>
             <!-- /.box-header -->
             <div class="box-body">
@@ -363,7 +363,7 @@
 
           <div class="box">
             <div class="box-header">
-              <h3 class="box-title"><i class="fa fa-cogs"></i> System Manager</h3>
+              <h3 class="box-title"><i class="fa fa-cogs"></i> 系统管理器</h3>
             </div>
             <!-- /.box-header -->
             <div class="box-body">
@@ -386,7 +386,7 @@
 
           <div class="box">
             <div class="box-header">
-              <h3 class="box-title"><i class="fa fa-bar-chart-o"></i> Process</h3>
+              <h3 class="box-title"><i class="fa fa-bar-chart-o"></i> 进程</h3>
             </div>
             <!-- /.box-header -->
             <div class="box-body">
@@ -409,7 +409,7 @@
 
           <div class="box">
             <div class="box-header">
-              <h3 class="box-title"><i class="glyphicon glyphicon-search"></i> EXPORTED ACTIVITY TESTER</h3>
+              <h3 class="box-title"><i class="glyphicon glyphicon-search"></i> 导出ACTIVITY TESTER</h3>
             </div>
             <!-- /.box-header -->
             <div class="box-body no-padding">
@@ -468,7 +468,7 @@
 
           <div class="box">
             <div class="box-header">
-              <h3 class="box-title"><i class="fa fa-camera"></i> SCREENSHOTS</h3>
+              <h3 class="box-title"><i class="fa fa-camera"></i> 截屏</h3>
             </div>
             <!-- /.box-header -->
             <div class="box-body">
@@ -496,7 +496,7 @@
 
           <div class="box">
             <div class="box-header">
-              <h3 class="box-title"><i class="fa fa-exchange"></i> HTTP(s) Traffic</h3>
+              <h3 class="box-title"><i class="fa fa-exchange"></i> HTTP(s) 信道</h3>
             </div>
             <!-- /.box-header -->
             <div class="box-body">
@@ -548,7 +548,7 @@
 
           <div class="box">
             <div class="box-header">
-              <h3 class="box-title"><i class="glyphicon glyphicon-screenshot"></i> Malware Check</h3>
+              <h3 class="box-title"><i class="glyphicon glyphicon-screenshot"></i> 恶意软件检测</h3>
             </div>
             <!-- /.box-header -->
             <div class="box-body no-padding">
@@ -568,14 +568,14 @@
                   <tr><td>{{domain}}</td><td> 
 
                     {% if details|key:"bad" == "yes" %}
-                    <span class="label label-danger">malware</span></br>
+                    <span class="label label-danger">恶意软件</span></br>
 <pre>
 <strong>URL: </strong>{{details|key:"domain_or_url"}}
 <strong>IP: </strong><span class="label label-danger">{{details|key:"ip"}}</span>
 <strong>Description: </strong>{{details|key:"desc"}}
 </pre>
                   {% else %}
-                    <span class="label label-success">good</span></br>
+                    <span class="label label-success">良好</span></br>
                   {% endif %}
 
 
@@ -598,7 +598,7 @@
 
           <div class="box">
             <div class="box-header">
-              <h3 class="box-title"><i class="glyphicon glyphicon-envelope"></i> EMAILs</h3>
+              <h3 class="box-title"><i class="glyphicon glyphicon-envelope"></i> 邮箱</h3>
             </div>
             <!-- /.box-header -->
             <div class="box-body">
@@ -624,7 +624,7 @@
 
           <div class="box">
             <div class="box-header">
-              <h3 class="box-title"><i class="fa fa-database"></i> SQLite Databases</h3>
+              <h3 class="box-title"><i class="fa fa-database"></i> SQLite 数据库</h3>
             </div>
             <!-- /.box-header -->
             <div class="box-body">
@@ -648,7 +648,7 @@
 
           <div class="box">
             <div class="box-header">
-              <h3 class="box-title"><i class="fa fa-file-excel-o"></i> XML Files</h3>
+              <h3 class="box-title"><i class="fa fa-file-excel-o"></i> XML 文件</h3>
             </div>
             <!-- /.box-header -->
             <div class="box-body">
@@ -672,7 +672,7 @@
 
           <div class="box">
             <div class="box-header">
-              <h3 class="box-title"><i class="fa fa-file-o"></i> Other Files</h3>
+              <h3 class="box-title"><i class="fa fa-file-o"></i> 其他文件</h3>
             </div>
             <!-- /.box-header -->
             <div class="box-body">
