@@ -12,13 +12,13 @@
           <!-- sidebar menu: : style can be found in sidebar.less -->
 
           <ul class="nav sidebar-menu">
-            <li class="header">Web API Scan Results</li>
+            <li class="header">Web API 扫描结果</li>
             {% for finding_name, value in result.items %}
             <li class="active"><a href="#{{finding_name}}"><i class="glyphicon glyphicon-info-sign"></i> {{finding_name}}</a></li>
             {% endfor %}
 
             {% if result.items|length > 0 %}
-            <li><a href="javascript:window.print()"><i class="fa fa-cloud-download"></i> Download / Print</a></li>
+            <li><a href="javascript:window.print()"><i class="fa fa-cloud-download"></i> 下载 / 打印</a></li>
             {% endif %}
              
           </ul>
@@ -64,8 +64,8 @@
           <!-- Custom Tabs -->
              <div class="nav-tabs-custom">
             <ul class="nav nav-tabs">
-              <li class="active"><a href="#request{{ finding_name | spacify}}{{ forloop.counter0 }}" data-toggle="tab" aria-expanded="true">Request</a></li>
-              <li class=""><a href="#response{{ finding_name | spacify}}{{ forloop.counter0 }}" data-toggle="tab" aria-expanded="false">Response</a></li>
+              <li class="active"><a href="#request{{ finding_name | spacify}}{{ forloop.counter0 }}" data-toggle="tab" aria-expanded="true">请求</a></li>
+              <li class=""><a href="#response{{ finding_name | spacify}}{{ forloop.counter0 }}" data-toggle="tab" aria-expanded="false">回复</a></li>
             </ul>
             <div class="tab-content">
 
