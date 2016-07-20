@@ -26,7 +26,7 @@ Mobile Security Framework (移动安全框架) 是一款智能、一体化的开
 * 自动攻击演示: https://opsecx.com/index.php/product/automated-mobile-application-security-assessment-with-mobsf/
 
 ## 更新日志：
-* 查看g: https://github.com/ajinabraham/Mobile-Security-Framework-MobSF/wiki/3.-Changelog
+* 查看: https://github.com/ajinabraham/Mobile-Security-Framework-MobSF/wiki/3.-Changelog
 
 ## 提交问题：
 
