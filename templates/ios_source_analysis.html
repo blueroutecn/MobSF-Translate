@@ -9,22 +9,21 @@
           <!-- sidebar menu: : style can be found in sidebar.less -->
           <ul class="nav sidebar-menu">
               <li class="header">Static Analysis</li>
-            <li class="active"><a href="#information"><i class="glyphicon glyphicon-info-sign"></i> Information</a></li>
-            <li><a href="#options"><i class="fa fa-gears"></i> Options</a></li>
+            <li class="active"><a href="#information"><i class="glyphicon glyphicon-info-sign"></i> 信息</a></li>
+            <li><a href="#options"><i class="fa fa-gears"></i> 选项</a></li>
             <li><a href="#ios-api"><i class="fa fa-dot-circle-o"></i> iOS API</a></li>
-            <li><a href="#code"><i class="fa fa-code"></i> Code Analysis</a></li>
-            <li><a href="#file"><i class="fa fa-file-text-o"></i> File Analysis</a></li>
+            <li><a href="#code"><i class="fa fa-code"></i> 代码分析</a></li>
+            <li><a href="#file"><i class="fa fa-file-text-o"></i> 文件分析</a></li>
              <li class="treeview">
-              <a href="javascript::;"><i class="fa fa-plus"></i> Reconnaissance</a>
+              <a href="javascript::;"><i class="fa fa-plus"></i> 侦察信息</a>
               <ul class="nav treeview-menu">
                 <li><a href="#url"><i class="glyphicon glyphicon-globe"></i> URLs</a></li>
-                <li><a href="#domain"><i class="glyphicon glyphicon-screenshot"></i> Malware Check</a></li>
-                <li><a href="#email"><i class="glyphicon glyphicon-envelope"></i> Emails</a></li>
+                <li><a href="#domain"><i class="glyphicon glyphicon-screenshot"></i> 恶意软件检测</a></li>
+                <li><a href="#email"><i class="glyphicon glyphicon-envelope"></i> 邮箱</a></li>
               </ul>
             </li>
-            <li><a href="#libraries"><i class="glyphicon glyphicon-chevron-down"></i> Libraries</a></li>
-            <li><a href="#files"><i class="fa fa-files-o"></i> Files</a></li> 
-            <li><a target="_blank" href="../PDF/?md5={{ md5 }}&amp;type=IOSZIP"><i class="glyphicon glyphicon-list-alt"></i> Download Report</a></li>
+            <li><a href="#libraries"><i class="glyphicon glyphicon-chevron-down"></i> 库</a></li>
+            <li><a href="#files"><i class="fa fa-files-o"></i> 文件</a></li> 
           </ul>
         </div>
         <!-- /.sidebar -->
@@ -68,17 +67,17 @@
     <div class="col-sm-7">
       <div class="box box-primary">
         <div class="box-header with-border">
-          <h3 class="box-title">File Information</h3>
+          <h3 class="box-title">文件信息</h3>
           <span class="label label-primary pull-right"><i class="glyphicon glyphicon-file"></i></span>
         </div><!-- /.box-header -->
         <div class="box-body">
            <div class="list-group">
                   <p>                                       
-                      <span class="label label-primary">Name</span>
+                      <span class="label label-primary">文件名称</span>
                       {{ name }}
                   </p>
                   <p>
-                      <span class="label label-primary">Size</span>
+                      <span class="label label-primary">大小</span>
                       {{ size }}
                   </p>
                   <p>
@@ -101,33 +100,33 @@
     <div class="col-sm-5">
       <div class="box box-danger">
         <div class="box-header with-border">
-          <h3 class="box-title">App Information</h3>
+          <h3 class="box-title">App信息n</h3>
           <span class="label label-danger pull-right"><i class="glyphicon glyphicon-info-sign"></i></span>
         </div><!-- /.box-header -->
         <div class="box-body">
         <div class="list-group">
                <p>                                       
-              <span class="label label-primary">App Name</span>
+              <span class="label label-primary">App名称</span>
               {{ bin_name }}
               </p>
                <p>                                       
-              <span class="label label-primary">Identifier</span>
+              <span class="label label-primary">识别符</span>
               {{ id }}
-                <span class="label label-primary">SDK Name</span>
+                <span class="label label-primary">SDK名称</span>
               {{ sdk }}
              
 
               </p>
                 <p>                                       
-             <span class="label label-primary">Version</span>
+             <span class="label label-primary">版本</span>
               {{ ver }}
                </p>
                <p>
-              <span class="label label-primary">Platform Version</span>
+              <span class="label label-primary">平台版本</span>
               {{ pltfm }}
             </p>
             <p>
-             <span class="label label-primary">Min OS Version</span>
+             <span class="label label-primary">最小OS版本</span>
               {{ min }}
             </p>
        </div>
@@ -157,8 +156,8 @@
         </div><!-- /.box-header -->
         <div class="box-body">
          <div align="center">
-      <a data-target="#myModal" role="button" class="btn btn-info" data-toggle="modal"><i class="fa fa-list"></i> View Info.plist</a>
-      <a href="../StaticAnalyzer_iOS/?checksum={{ md5 }}&amp;name={{ name }}&amp;type=ios&amp;rescan=1" class="btn btn-info" role="button"><i class="glyphicon glyphicon-refresh"></i> Rescan</a>
+      <a data-target="#myModal" role="button" class="btn btn-info" data-toggle="modal"><i class="fa fa-list"></i> 查看 Info.plist</a>
+      <a href="../StaticAnalyzer_iOS/?checksum={{ md5 }}&amp;name={{ name }}&amp;type=ios&amp;rescan=1" class="btn btn-info" role="button"><i class="glyphicon glyphicon-refresh"></i> 重新扫描</a>
 </div>
 
                </div><!-- /.box-body -->
@@ -214,7 +213,7 @@
 
           <div class="box">
             <div class="box-header">
-              <h3 class="box-title"><i class="fa  fa-code"></i> Code Analysis</h3>
+              <h3 class="box-title"><i class="fa  fa-code"></i> 代码分析</h3>
             </div>
             <!-- /.box-header -->
             <div class="box-body no-padding">
@@ -222,9 +221,9 @@
                                       <table class="table table-bordered table-hover table-striped">
                                         <thead>
                                             <tr>
-                                                <th>ISSUE</th>
-                                                <th>STATUS</th>
-                                                <th>DESCRIPTION</th>
+                                                <th>事件</th>
+                                                <th>状态</th>
+                                                <th>描述</th>
                                                 
                                             </tr>
                                         </thead>
@@ -249,7 +248,7 @@
 
           <div class="box">
             <div class="box-header">
-              <h3 class="box-title"><i class="fa fa-file-text-o"></i> File Analysis</h3>
+              <h3 class="box-title"><i class="fa fa-file-text-o"></i> 文件分析</h3>
             </div>
             <!-- /.box-header -->
             <div class="box-body no-padding">
@@ -257,8 +256,8 @@
                                     <table class="table table-bordered table-hover table-striped">
                                         <thead>
                                             <tr>
-                                                <th>ISSUE</th>
-                                                <th>FILES</th>
+                                                <th>事件</th>
+                                                <th>文件</th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -291,7 +290,7 @@
                   <thead>
                   <tr>
                      <th>URL</th>
-                     <th>File</th>
+                     <th>文件</th>
                   </tr>
                  </thead>
                     {% endif %}
@@ -317,7 +316,7 @@
 
           <div class="box">
             <div class="box-header">
-              <h3 class="box-title"><i class="glyphicon glyphicon-screenshot"></i> Malware Check</h3>
+              <h3 class="box-title"><i class="glyphicon glyphicon-screenshot"></i> 恶意软件检测k</h3>
             </div>
             <!-- /.box-header -->
             <div class="box-body no-padding">
@@ -326,8 +325,8 @@
                   {% if urls|length > 1 %} 
                   <thead>
                   <tr>
-                     <th>Domain</th>
-                     <th>Status</th>
+                     <th>域名</th>
+                     <th>状态</th>
                   </tr>
                  </thead>
                   {% endif %}
@@ -337,14 +336,14 @@
                   <tr><td>{{domain}}</td><td> 
 
                     {% if details|key:"bad" == "yes" %}
-                    <span class="label label-danger">malware</span></br>
+                    <span class="label label-danger">恶意软件</span></br>
 <pre>
 <strong>URL: </strong>{{details|key:"domain_or_url"}}
 <strong>IP: </strong><span class="label label-danger">{{details|key:"ip"}}</span>
-<strong>Description: </strong>{{details|key:"desc"}}
+<strong>描述: </strong>{{details|key:"desc"}}
 </pre>
                   {% else %}
-                    <span class="label label-success">good</span></br>
+                    <span class="label label-success">良好</span></br>
                   {% endif %}
 
 
@@ -369,7 +368,7 @@
 
           <div class="box">
             <div class="box-header">
-              <h3 class="box-title"><i class="glyphicon glyphicon-envelope"></i> Emails</h3>
+              <h3 class="box-title"><i class="glyphicon glyphicon-envelope"></i> 邮箱</h3>
             </div>
             <!-- /.box-header -->
             <div class="box-body no-padding">
@@ -378,8 +377,8 @@
                                         {% if emails|length > 1 %} 
                   <thead>
                   <tr>
-                     <th>Email</th>
-                     <th>File</th>
+                     <th>邮箱</th>
+                     <th>文件</th>
                   </tr>
                  </thead>
                  {% endif %}
@@ -406,7 +405,7 @@
 
           <div class="box">
             <div class="box-header">
-              <h3 class="box-title"><i class="glyphicon glyphicon-chevron-down"></i> Libraries</h3>
+              <h3 class="box-title"><i class="glyphicon glyphicon-chevron-down"></i> 库</h3>
             </div>
             <!-- /.box-header -->
             <div class="box-body">
@@ -427,7 +426,7 @@
 
           <div class="box">
             <div class="box-header">
-              <h3 class="box-title"><i class="fa fa-files-o"></i> Files</h3>
+              <h3 class="box-title"><i class="fa fa-files-o"></i> 文件</h3>
             </div>
             <!-- /.box-header -->
             <div class="box-body">
