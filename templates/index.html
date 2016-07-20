@@ -110,7 +110,7 @@ progress::-webkit-progress-value {
   <div class="fileUpload btn btn-default btn-lg" id="but">
   <input type="file" name="file" id="uploadFile" placeholder="Choose File">
   <span class="glyphicon glyphicon-cloud-upload"></span>
-   Upload &amp; Analyze
+   上传&amp;分析
   </div>
   <h4 id="status"></h4>
   <progress id="progressBar" value="0" max="100" style="width:300px;visibility:hidden;" ></progress>
@@ -122,12 +122,12 @@ progress::-webkit-progress-value {
           <div class="mastfoot">
 
                 <form action="/Search" method="GET">
-                <input name="md5" type="text" class="form-control" placeholder="Search MD5">
+                <input name="md5" type="text" class="form-control" placeholder="搜索MD5">
                 </form>
 
             <div class="inner">
-              <h5><strong><a href="RecentScans">Recent Scans</a> | <a href="about">About</a></strong></h5></br>
-             <p>&copy; {% now "Y" %}  Mobile Security Framework - MobSF {{ version }}. All Rights Reserved</p>
+              <h5><strong><a href="RecentScans">最近项目</a> | <a href="about">关于</a></strong></h5></br>
+             <p>&copy; {% now "Y" %}  Mobile Security Framework - MobSF (Kotobuki.cf). All Rights Reserved</p>
             </div>
           </div>
         </div>
@@ -172,7 +172,7 @@ function responseHandler (json, isbutton) {
   createImageThumbnails: false,
   maxFilesize: 100, // MB
   maxFiles: 8,
-  dictDefaultMessage: 'Drag files here or click Upload & Analyze',
+  dictDefaultMessage: '拖动文件至此',
   acceptedFiles: '.apk,.ipa,.zip',
 
   init: function() {
@@ -197,7 +197,7 @@ $('input[type=file]').change(function ()
         if (!(regex.test(val))) 
           {
             $(this).val('');
-            _('status').innerHTML = "Please upload APK/IPA/ZIP only!";
+            _('status').innerHTML = "只可上传APK/IPA/ZIP!";
           }
           else 
           {
@@ -234,9 +234,9 @@ $('input[type=file]').change(function ()
 });
 function progressHandler(event){
   var percent = (event.loaded / event.total) * 100;
-  console.log("Uploaded..."+Math.round(percent));
+  console.log("已上传..."+Math.round(percent));
   _("progressBar").value = Math.round(percent);
-  _("status").innerHTML = Math.round(percent)+"% Uploaded...";
+  _("status").innerHTML = Math.round(percent)+"% 已上传...";
 }
 function completeHandler(event)
 {
@@ -245,10 +245,10 @@ function completeHandler(event)
   responseHandler(json);
 }
 function errorHandler(event){
-  _("status").innerHTML = "Upload Failed!";
+  _("status").innerHTML = "上传失败！";
 }
 function abortHandler(event){
-  _("status").innerHTML = "Upload Aborted!";
+  _("status").innerHTML = "上传终止！";
 }
 </script>
     <!-- Bootstrap core JavaScript

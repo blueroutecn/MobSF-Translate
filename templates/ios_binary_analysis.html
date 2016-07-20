@@ -8,15 +8,15 @@
 
           <!-- sidebar menu: : style can be found in sidebar.less -->
           <ul class="nav sidebar-menu">
-            <li class="header">Static Analysis</li>
-            <li class="active"><a href="#information"><i class="glyphicon glyphicon-info-sign"></i> Information</a></li>
-            <li><a href="#options"><i class="fa fa-gears"></i> Options</a></li>
-            <li><a href="#binary"><i class="fa fa-mobile"></i> Binary Analysis</a></li>
-            <li><a href="#file"><i class="fa fa-file-text-o"></i> File Analysis</a></li>
-            <li><a href="#libraries"><i class="glyphicon glyphicon-chevron-down"></i> Libraries</a></li>
-            <li><a href="#strings"><i class="glyphicon glyphicon-sort-by-alphabet-alt"></i> Strings</a></li>
-            <li><a href="#files"><i class="fa fa-files-o"></i> Files</a></li>
-            <li><a target="_blank" href="../PDF/?md5={{ md5 }}&amp;type=IPA"><i class="glyphicon glyphicon-list-alt"></i> Download Report</a></li>
+            <li class="header">静态分析</li>
+            <li class="active"><a href="#information"><i class="glyphicon glyphicon-info-sign"></i> 信息</a></li>
+            <li><a href="#options"><i class="fa fa-gears"></i> 选项</a></li>
+            <li><a href="#binary"><i class="fa fa-mobile"></i> 二进制分析</a></li>
+            <li><a href="#file"><i class="fa fa-file-text-o"></i> 文件分析</a></li>
+            <li><a href="#libraries"><i class="glyphicon glyphicon-chevron-down"></i> 库</a></li>
+            <li><a href="#strings"><i class="glyphicon glyphicon-sort-by-alphabet-alt"></i> 字符串</a></li>
+            <li><a href="#files"><i class="fa fa-files-o"></i> 文件</a></li>
+            
           </ul>
         </div>
         <!-- /.sidebar -->
@@ -64,17 +64,17 @@
     <div class="col-sm-7">
       <div class="box box-primary">
         <div class="box-header with-border">
-          <h3 class="box-title">File Information</h3>
+          <h3 class="box-title">文件信息</h3>
           <span class="label label-primary pull-right"><i class="glyphicon glyphicon-file"></i></span>
         </div><!-- /.box-header -->
         <div class="box-body">
            <div class="list-group">
                   <p>
-                      <span class="label label-primary">Name</span>
+                      <span class="label label-primary">名称</span>
                       {{ name }}
                   </p>
                   <p>
-                      <span class="label label-primary">Size</span>
+                      <span class="label label-primary">大小</span>
                       {{ size }}
                   </p>
                   <p>
@@ -97,33 +97,33 @@
     <div class="col-sm-5">
       <div class="box box-danger">
         <div class="box-header with-border">
-          <h3 class="box-title">App Information</h3>
+          <h3 class="box-title">App信息</h3>
           <span class="label label-danger pull-right"><i class="glyphicon glyphicon-info-sign"></i></span>
         </div><!-- /.box-header -->
         <div class="box-body">
         <div class="list-group">
                <p>
-              <span class="label label-primary">App Name</span>
+              <span class="label label-primary">App名称</span>
               {{ bin_name }}
               </p>
                <p>
-              <span class="label label-primary">Identifier</span>
+              <span class="label label-primary">标识符</span>
               {{ id }}
-                <span class="label label-primary">SDK Name</span>
+                <span class="label label-primary">SDK名称</span>
               {{ sdk }}
 
 
               </p>
                 <p>
-             <span class="label label-primary">Version</span>
+             <span class="label label-primary">版本</span>
               {{ ver }}
                </p>
                <p>
-              <span class="label label-primary">Platform Version</span>
+              <span class="label label-primary">平台版本</span>
               {{ pltfm }}
             </p>
             <p>
-             <span class="label label-primary">Min OS Version</span>
+             <span class="label label-primary">最小OS版本</span>
               {{ min }}
             </p>
        </div>
@@ -148,14 +148,14 @@
     <div class="col-sm-12">
       <div class="box box-danger">
         <div class="box-header with-border">
-          <h3 class="box-title">Options</h3>
+          <h3 class="box-title">设置</h3>
           <span class="label label-danger pull-right"><i class="fa fa-flash"></i></span>
         </div><!-- /.box-header -->
         <div class="box-body">
          <div align="center">
-      <a data-target="#myModal" role="button" class="btn btn-info" data-toggle="modal"><i class="fa fa-list"></i> View Info.plist</a>
+      <a data-target="#myModal" role="button" class="btn btn-info" data-toggle="modal"><i class="fa fa-list"></i> 查看 Info.plist</a>
        <a target="_blank" href="../ViewFile/?file=classdump.txt&type=txt&md5={{ md5 }}&mode=ios" class="btn btn-warning" role="button"><i class="fa fa-code"></i> View Class Dump</a>
-      <a href="../StaticAnalyzer_iOS/?checksum={{ md5 }}&amp;name={{ name }}&amp;type=ipa&amp;rescan=1" class="btn btn-info" role="button"><i class="glyphicon glyphicon-refresh"></i> Rescan</a>
+      <a href="../StaticAnalyzer_iOS/?checksum={{ md5 }}&amp;name={{ name }}&amp;type=ipa&amp;rescan=1" class="btn btn-info" role="button"><i class="glyphicon glyphicon-refresh"></i> 重新扫描</a>
 </div>
 
                </div><!-- /.box-body -->
@@ -176,16 +176,16 @@
           <div class="box">
           <div class="box-header">
              <!-- /.box-header -->
-              <h3 class="box-title"><i class="fa fa-mobile"></i> Binary Analysis</h3>
+              <h3 class="box-title"><i class="fa fa-mobile"></i> 二进制分析</h3>
             </div>
            <div class="box-body no-padding">
               <div class="table-responsive">
               <table class="table table-bordered table-hover table-striped">
                   <thead>
                       <tr>
-                          <th>ISSUE</th>
-                          <th>STATUS</th>
-                          <th>DESCRIPTION</th>
+                          <th>事件</th>
+                          <th>状态</th>
+                          <th>状态</th>
 
                       </tr>
                   </thead>
@@ -211,7 +211,7 @@
 
           <div class="box">
             <div class="box-header">
-              <h3 class="box-title"><i class="fa fa-file-text-o"></i> File Analysis</h3>
+              <h3 class="box-title"><i class="fa fa-file-text-o"></i> 文件分析</h3>
             </div>
             <!-- /.box-header -->
             <div class="box-body no-padding">
@@ -219,8 +219,8 @@
           <table class="table table-bordered table-hover table-striped">
               <thead>
                   <tr>
-                      <th>ISSUE</th>
-                      <th>FILES</th>
+                      <th>事件</th>
+                      <th>文件</th>
                   </tr>
               </thead>
               <tbody>
@@ -293,7 +293,7 @@
 
           <div class="box">
             <div class="box-header">
-              <h3 class="box-title"><i class="fa fa-files-o"></i> Files</h3>
+              <h3 class="box-title"><i class="fa fa-files-o"></i> 文件</h3>
             </div>
             <!-- /.box-header -->
             <div class="box-body">

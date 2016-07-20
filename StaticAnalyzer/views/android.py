@@ -1,4 +1,7 @@
 # -*- coding: utf_8 -*-
+import sys
+reload(sys)
+sys.setdefaultencoding('utf8')
 from django.shortcuts import render
 from django.http import HttpResponseRedirect
 from django.http import HttpResponse
@@ -827,7 +830,7 @@ def FormatPermissions(PERMISSIONS):
             for l in PERMISSIONS[ech]:
                 DESC= DESC + '<td>' + l + '</td>'
             DESC= DESC+ '</tr>'
-        DESC=DESC.replace('dangerous','<span class="label label-danger">dangerous</span>').replace('normal','<span class="label label-info">normal</span>').replace('signatureOrSystem','<span class="label label-warning">SignatureOrSystem</span>').replace('signature','<span class="label label-success">signature</span>')
+        DESC=DESC.replace('危险','<span class="label label-danger">危险</span>').replace('普通','<span class="label label-info">普通</span>').replace('签名(系统)','<span class="label label-warning">签名</span>').replace('签名','<span class="label label-success">签名</span>')
         return DESC
     except:
         PrintException("[ERROR] Formatting Permissions")
@@ -1069,7 +1072,7 @@ def ManifestData(mfxml,app_dir):
             try :
                 DP[ i ] = DVM_PERMISSIONS["MANIFEST_PERMISSION"][ prm ]
             except KeyError :
-                DP[ i ] = [ "dangerous", "Unknown permission from android reference", "Unknown permission from android reference" ]
+                DP[ i ] = [ "危险", "未知", "未知" ]
         return SVC,ACT,BRD,CNP,LIB,DP,package,mainact,minsdk,maxsdk,targetsdk,androidversioncode,androidversionname
     except:
         PrintException("[ERROR] Extracting Manifest Data")
