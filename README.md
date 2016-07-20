@@ -23,40 +23,40 @@ Mobile Security Framework (移动安全框架) 是一款智能、一体化的开
 * [c0c0n 2015](https://www.slideshare.net/ajin25/automated-security-analysis-of-android-ios-applications-with-mobile-security-framework-c0c0n-2015)
 
 ## 视频教程：
-* Automated Mobile Application Security Assessment with MobSF: https://opsecx.com/index.php/product/automated-mobile-application-security-assessment-with-mobsf/
+* 自动攻击演示: https://opsecx.com/index.php/product/automated-mobile-application-security-assessment-with-mobsf/
 
 ## 更新日志：
-* See Changelog: https://github.com/ajinabraham/Mobile-Security-Framework-MobSF/wiki/3.-Changelog
+* 查看g: https://github.com/ajinabraham/Mobile-Security-Framework-MobSF/wiki/3.-Changelog
 
 ## 提交问题：
 
-* Features Requests: [@ajinabraham](https://twitter.com/ajinabraham) or [@Kotobuki](https://github.com/kotobukki/). 
+* 咨询: [@ajinabraham](https://twitter.com/ajinabraham) 或 [@Kotobuki](https://github.com/kotobukki/). 
 
 
-## Screenshots
+## 运行图片：
 
-###Static Analysis - Android APK 
+###静态分析 - Android程序 
 
 ![android-static-analysis-apk](https://cloud.githubusercontent.com/assets/4301109/13614857/7a39189c-e598-11e5-90ff-6357b6c320bd.png)
 ![android-static-analysis-apk2](https://cloud.githubusercontent.com/assets/4301109/13614896/b7b7b53e-e598-11e5-84b5-e69c56c230a3.png)
 
-###Static Analysis - iOS IPA
+###静态分析 - iOS程序
 
 ![ios-static-analysis-ipa](https://cloud.githubusercontent.com/assets/4301109/13614950/e8174ac8-e598-11e5-8e03-d40ad7d9e5a4.png)
 
-###Dynamic Analysis - Android APK
+###动态分析 - Android程序
 
 ![android-dynamic-analysis](https://cloud.githubusercontent.com/assets/4301109/13615043/6fe62028-e599-11e5-9c50-e44adbba114a.png)
 ![android-dynamic-report](https://cloud.githubusercontent.com/assets/4301109/13615800/104cc424-e59d-11e5-9a98-2e3b2aff7222.png)
 ![android-dynamic-report2](https://cloud.githubusercontent.com/assets/4301109/13615767/f04e5c1e-e59c-11e5-9ad1-b31598024ad4.png)
 ![android-dynamic-expact](https://cloud.githubusercontent.com/assets/4301109/13615882/6f4d9f16-e59d-11e5-9ec9-3b4c47e37389.png)
 
-###Web API Fuzzer
+### API审计器
 
 ![api-fuzzer-start-scan](https://cloud.githubusercontent.com/assets/4301109/13615144/e992ecda-e599-11e5-88d5-e7c310980b62.png)
 ![api-fuzzer-start-report](https://cloud.githubusercontent.com/assets/4301109/13615236/5d8df210-e59a-11e5-827a-ccf642e96609.png)
 
-##Credits
+##感谢名单：
 
 * Bharadwaj Machiraju (@tunnelshade_) - For writing pyWebProxy from scratch
 * MindMac - For writing Android Blue Pill
